@@ -21,6 +21,9 @@
 		8EEE6ABD18CF60F2005F295E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEE6A9F18CF60F1005F295E /* UIKit.framework */; };
 		8EEE6AC518CF60F2005F295E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE6AC318CF60F2005F295E /* InfoPlist.strings */; };
 		8EEE6AC718CF60F2005F295E /* SingASongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE6AC618CF60F2005F295E /* SingASongTests.m */; };
+		8EEE6AD118CF6120005F295E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEE6AD018CF6120005F295E /* FacebookSDK.framework */; };
+		8EEE6ADD18CF689E005F295E /* FBFunLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE6ADB18CF689E005F295E /* FBFunLoginDialog.m */; };
+		8EEE6ADE18CF689E005F295E /* FBFunLoginDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEE6ADC18CF689E005F295E /* FBFunLoginDialog.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		8EEE6AC218CF60F2005F295E /* SingASongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingASongTests-Info.plist"; sourceTree = "<group>"; };
 		8EEE6AC418CF60F2005F295E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EEE6AC618CF60F2005F295E /* SingASongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingASongTests.m; sourceTree = "<group>"; };
+		8EEE6AD018CF6120005F295E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		8EEE6ADA18CF689E005F295E /* FBFunLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFunLoginDialog.h; sourceTree = "<group>"; };
+		8EEE6ADB18CF689E005F295E /* FBFunLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFunLoginDialog.m; sourceTree = "<group>"; };
+		8EEE6ADC18CF689E005F295E /* FBFunLoginDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FBFunLoginDialog.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EEE6A9E18CF60F1005F295E /* CoreGraphics.framework in Frameworks */,
+				8EEE6AD118CF6120005F295E /* FacebookSDK.framework in Frameworks */,
 				8EEE6AA018CF60F1005F295E /* UIKit.framework in Frameworks */,
 				8EEE6A9C18CF60F1005F295E /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +109,7 @@
 		8EEE6A9A18CF60F1005F295E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EEE6AD018CF6120005F295E /* FacebookSDK.framework */,
 				8EEE6A9B18CF60F1005F295E /* Foundation.framework */,
 				8EEE6A9D18CF60F1005F295E /* CoreGraphics.framework */,
 				8EEE6A9F18CF60F1005F295E /* UIKit.framework */,
@@ -112,6 +121,9 @@
 		8EEE6AA118CF60F1005F295E /* SingASong */ = {
 			isa = PBXGroup;
 			children = (
+				8EEE6ADA18CF689E005F295E /* FBFunLoginDialog.h */,
+				8EEE6ADB18CF689E005F295E /* FBFunLoginDialog.m */,
+				8EEE6ADC18CF689E005F295E /* FBFunLoginDialog.xib */,
 				8EEE6AAA18CF60F2005F295E /* AppDelegate.h */,
 				8EEE6AAB18CF60F2005F295E /* AppDelegate.m */,
 				8EEE6AAD18CF60F2005F295E /* Main.storyboard */,
@@ -231,6 +243,7 @@
 				8EEE6AB418CF60F2005F295E /* Images.xcassets in Resources */,
 				8EEE6AA618CF60F2005F295E /* InfoPlist.strings in Resources */,
 				8EEE6AAF18CF60F2005F295E /* Main.storyboard in Resources */,
+				8EEE6ADE18CF689E005F295E /* FBFunLoginDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +265,7 @@
 				8EEE6AB218CF60F2005F295E /* ViewController.m in Sources */,
 				8EEE6AAC18CF60F2005F295E /* AppDelegate.m in Sources */,
 				8EEE6AA818CF60F2005F295E /* main.m in Sources */,
+				8EEE6ADD18CF689E005F295E /* FBFunLoginDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +392,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/joleneaw/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SingASong/SingASong-Prefix.pch";
 				INFOPLIST_FILE = "SingASong/SingASong-Info.plist";
@@ -391,6 +409,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/joleneaw/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SingASong/SingASong-Prefix.pch";
 				INFOPLIST_FILE = "SingASong/SingASong-Info.plist";
